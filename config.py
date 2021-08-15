@@ -8,8 +8,8 @@ que = {}
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME")
-QUE_IMG = getenv("QUE_IMG")
-AUD_IMG = getenv("AUD_IMG")
+QUE_IMG = getenv("QUE_IMG", "https://telegra.ph/file/fa5805751e44608b1e162.png")
+AUD_IMG = getenv("AUD_IMG", "https://telegra.ph/file/fa5805751e44608b1e162.png")
 
 admins = {}
 API_ID = int(getenv("API_ID"))
