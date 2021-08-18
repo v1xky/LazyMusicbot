@@ -101,7 +101,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    filters.command("musicplayer") & ~filters.edited & ~filters.bot & ~filters.private
+    command("musicplayer") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @authorized_users_only
 async def hfmm(_, message):
@@ -156,7 +156,7 @@ async def m_cb(b, cb):
         await cb.message.delete()
 
 # play
-@Client.on_message(filters.command("play") & filters.group & ~filters.edited & ~filters.forwarded & ~filters.via_bot)
+@Client.on_message(command("play") & filters.group & ~filters.edited & ~filters.forwarded & ~filters.via_bot)
 async def play(_, message: Message):
     global que
     global useer
